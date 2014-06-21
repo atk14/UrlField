@@ -7,7 +7,7 @@
  */
 class UrlField extends RegexField{
 	function __construct($options = array()){
-		parent::__construct('/^(https?:\/\/|)[a-z0-9.-]+(|:[0-9]{1,6})(\/.*|)$/i',$options);
+		parent::__construct('/^(https?:\/\/|)[a-z0-9._-]+(|:[0-9]{1,6})(\/.*|)$/i',$options);
 		$this->update_messages(array(
 			"invalid" => _("This doesn't look like an URL"),
 		));
