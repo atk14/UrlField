@@ -1,9 +1,9 @@
 {
-        "name": "yarri/url-field",
+        "name": "atk14/url-field",
         "type": "library",
         "description": "ATK14 form field for entering URLs",
         "keywords": ["atk14", "forms", "url", "field"],
-        "homepage": "https://github.com/yarri/UrlField",
+        "homepage": "https://github.com/atk14/UrlField",
         "license": ["MIT"],
         "authors": [
                 {
