@@ -1,25 +1,27 @@
 UrlField
 ========
 
+ATK14 form field for entering URL
+
 Installation
 ------------
 
 Just use the Composer:
 
-```
-$ cd path/to/your/atk14/project/
-$ php composer.phar require yarri/url-field dev-master
+```bash
+cd path/to/your/atk14/project/
+php composer.phar require yarri/url-field dev-master
 ```
 
 Optionaly you can link the field source file to the regular location
 
-```
-$ cd path/to/your/atk14/project/app/fields/
-$ ln -s ../../vendor/yarri/url-field/src/url_field.php
+```bash
+cd path/to/your/atk14/project/app/fields/
+ln -s ../../vendor/yarri/url-field/src/url_field.php
 ```
 
 If you haven't yet the Composer installed, run the following commands
-```
-$ cd path/to/your/atk14/project/
-$ curl -sS https://getcomposer.org/installer | php
+```bash
+cd path/to/your/atk14/project/
+curl -sS https://getcomposer.org/installer | php
 ```
