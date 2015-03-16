@@ -10,14 +10,14 @@ Just use the Composer:
 
 ```bash
 cd path/to/your/atk14/project/
-php composer.phar require yarri/url-field dev-master
+php composer.phar require atk14/url-field dev-master
 ```
 
 Optionaly you can link the field source file to the regular location
 
 ```bash
 cd path/to/your/atk14/project/app/fields/
-ln -s ../../vendor/yarri/url-field/src/url_field.php
+ln -s ../../vendor/atk14/url-field/src/url_field.php
 ```
 
 If you haven't yet the Composer installed, run the following commands
