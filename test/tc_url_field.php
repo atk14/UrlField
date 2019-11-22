@@ -4,11 +4,11 @@ class TcUrlField extends TcBase {
 	function test(){
 		$this->field = new UrlField();
 
-		foreach([
+		foreach(array(
 			"https://www.atk14.net" => "https://www.atk14.net/",
 			"www.atk14.net/about" => "http://www.atk14.net/about",
 			"www.atk14.net" => "http://www.atk14.net/",
-		] as $url => $expected_url){
+		) as $url => $expected_url){
 			$cleaned_url = $this->assertValid($url);
 			$this->assertEquals($expected_url,$cleaned_url);
 		}
