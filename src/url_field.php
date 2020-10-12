@@ -7,8 +7,8 @@
  */
 class UrlField extends RegexField{
 	function __construct($options = array()){
-		$auth_token = '[a-zA-Z0-9%]';
-		parent::__construct('/^(?<proto>https?:\/\/|)(?<basic_auth>'.$auth_token.'*:'.$auth_token.'*@|)[a-z0-9._-]+(|:[0-9]{1,6})(?<port>\/.*|)$/i',$options);
+		$auth_token = '([a-zA-Z0-9~_#$&;=?-]|%[0-9a-fA-F]{2})';
+		parent::__construct('/^(?<proto>https?:\/\/|)(?<basic_auth>'.$auth_token.'+:'.$auth_token.'+@|)[a-z0-9._-]+(|:[0-9]{1,6})(?<port>\/.*|)$/i',$options);
 		$this->update_messages(array(
 			"invalid" => _("This doesn't look like an URL"),
 		));
