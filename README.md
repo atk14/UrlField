@@ -9,7 +9,7 @@ Installation
 Just use the Composer:
 
     cd path/to/your/atk14/project/
-    php composer.phar require atk14/url-field dev-master
+    composer require atk14/url-field
 
 Optionaly you can link the field source file to the regular location
 
